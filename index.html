@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josh Hill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3ab04a4225.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="nav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-left ms-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav column-gap-4">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#about">About Me</a>
+              <a class="nav-link" href="#find">Find Me</a>
+              <a class="nav-link"  href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    
+    <!--  Home Banner -->
+    <header class="masthead text-start" id="home">
+        <div class="container-fluid h-100 ms-5 clear">
+            <div class="row h-100 align-items-center" id="banner">
+                <div class="col ms-5 clear">
+                    <h1 class="fw-light lh-1" id="bannertext">I Am<br>Josh<br>Hill</h1>
+                </div>
+                <div class="col" id="image-div">
+                    <img class="img-fluid" id="ramenhead" src="./images/ramen-head.jpg" alt="Josh Hill with ramen on his head">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  End Home Banner -->
+
+    <!-- First Row  -->
+    <section>
+        <div class="container-fluid text-center">
+            <div class="row" id="row-1">
+                <div class="col about-col" id="about">
+                    <div class="d-flex flex-column">
+                        <h1 class="lh-lg t-50">About Me</h1>
+                        <p class="fs-5">
+                            This is a haiku.<br>
+                            So it does not say a&nbsp;lot<br>
+                            about me at all.
+                        </p>
+                    </div>
+                </div>
+                <div class="col about-col" id="find">
+                    <div id="find-card">
+                        <h1 class="pb-3">Find Me</h1>
+                        <div class="icons-container">
+                            <div class="icons">
+                                <div class="icon-row">
+                                    <div class="icon"><a href="https://github.com/hillosopher" target="_blank"><i class="bi bi-github"></i></a></div>
+                                    <div class="icon"><a href="https://www.linkedin.com/in/joshhilloddnotion/" target="_blank"><i class="bi bi-linkedin"></i></a></div>
+                                    <div class="icon"><a href="https://www.facebook.com/hillosopher/" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                                </div>
+                                <div class="icon-row">
+                                    <div class="icon"><a href="https://open.spotify.com/artist/1qA5Tp4XBEDxqaXwYb2jNT?si=m5ryjdVmTPCO1CQWLLD5_A" target="_blank"><i class="bi bi-spotify"></i></a></div>
+                                    <div class="icon"><a href="https://soundcloud.com/hillosopher" target="_blank"><i class="fab fa-soundcloud"></i></a></div>
+                                    <div class="icon"><a href="https://www.goodreads.com/user/show/8016604-josh/" target="_blank"><i class="fab fa-goodreads"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End First Row -->
+            <!-- Second Row -->
+            <div class="row">
+                <img class="col-2 object-fit-cover side-img" src="./images/toga.jpg" alt="Josh Hill with a toga">
+                <div class="col about-col" id="contact">
+                    <h1 class="mt-4">Contact Me</h1>
+                    <form class="text-start m-5 px-5 fs-4" action="https://formspree.io/f/xayzogwb"
+                    method="POST" id="form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Ramen Head" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address:</label>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="ramen@head.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea name="message" class="form-control" id="message" rows="2" placeholder='"I would like to give you a job", ya know, for instance'></textarea>
+                        </div>
+                        <div class="d-grid gap-2 col-2 mx-auto">
+                            <button class="btn btn-lg btn-primary mt-3" type="submit" form="form" value="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <img class="col-2 object-fit-cover side-img" src="./images/tux.jpg" alt="Josh Hill with a toga">
+            </div>
+            <!-- End Second Row -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="fs-6 text-center p-3"><strong>&copy;Josh Hill 2023</strong></footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script> <!-- Header transparent scroll effect -->
+        const navE1 = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 70) {
+                navE1.classList.add('navbar-scrolled');
+            } else if (window.scrollY <= 70) {
+                navE1.classList.remove('navbar-scrolled');
+            }
+        })
+    </script>
+    <script> <!-- Change text on image hover -->
+        const ramen = document.getElementById("ramenhead");
+        ramen.addEventListener('mouseover', () => {
+            document.getElementById("bannertext").innerHTML = `I Am \n Ramen \n Head`;
+        })
+        ramen.addEventListener('mouseout', () => {
+            document.getElementById("bannertext").innerHTML = `I Am <br> Josh <br> Hill`;
+        })
+    </script>
+  </body>
+</html>

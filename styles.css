@@ -1,0 +1,234 @@
+/* Variables */
+:root {
+    --orange: #FB8500;
+    --yellow: #FFB703;
+    --light-blue: #219EBC;
+    --dark-blue: #023047;
+    --gray: #8ECAE6;
+    --primary:'Roboto', sans-serif;
+    --secondary: 'Lora', serif;
+    --gradient: linear-gradient(128deg, rgba(251,133,0,1) 0%, rgba(255,183,3,1) 10%, rgba(142,202,230,1) 66%, rgba(33,158,188,1) 86%, rgba(2,48,71,1) 100%);
+}
+/* End Variables */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary);
+    color: #023047 !important;
+}
+
+p, footer {
+    font-family: var(--secondary);
+}
+
+.navbar {
+    background-color: transparent !important; 
+    padding: 15px 0px;
+    font-family: var(--primary);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: .01em;
+    transition: all .1s;
+}
+
+.navbar-scrolled {
+    background-color: #023047 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+.navbar-scrolled .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.masthead {
+    height: 95vh;
+    overflow: hidden;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--primary);
+    background: rgb(251,133,0);
+    background: linear-gradient(128deg, rgba(251,133,0,1) 0%, rgba(255,183,3,1) 10%, rgba(142,202,230,1) 66%, rgba(33,158,188,1) 86%, rgba(2,48,71,1) 100%);
+  }
+
+.masthead h1 {
+    font-weight: 900 !important;
+    letter-spacing: .01em;
+    font-size: 12vw;
+    color: #023047;
+}
+
+#ramenhead {
+    max-width: 80% !important;
+    max-height: 80vh;
+    border-radius: 100%;
+    border: 5px solid #FFB703;
+    box-shadow: 3px 3px 10px #023047;
+}
+
+.about-col {
+    padding: 30px 30px;
+    border: 1px solid var(--dark-blue);
+} 
+
+#about {
+    background-color: #FB8500;
+    
+}
+
+#find {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: inline;
+    padding: 0 15px;
+    font-size: 3rem;
+}
+
+.icon-row {
+    display: inline;
+}
+
+.bi, .fab {
+    color: #023047;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.bi-spotify:hover {
+    color: #FB8500;
+}
+
+.bi-github:hover {
+    color: #219EBC;
+}
+
+.bi-linkedin:hover {
+    color: #FFB703;
+}
+
+.bi-facebook:hover {
+    color: var(--gray);
+}
+
+.fa-goodreads:hover {
+    color: var(--light-blue);
+}
+
+.fa-soundcloud:hover {
+    color: var(--yellow);
+}
+
+form label {
+    font-family: var(--primary);
+    color: var(--dark-blue)
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: var(--secondary);
+}
+
+.fa-goodreads {
+    color: var(--dark-blue);
+    scale: 1.15;
+}
+
+#contact {
+    background-color: var(--gray);
+}
+
+.btn {
+    font-family: var(--primary);
+    background-color: #023047;
+    border-style:none;
+}
+
+.btn:hover {
+    background-color: var(--light-blue);
+    border-style: none;
+}
+
+.col-2 {
+    padding: 0;
+}
+
+footer {
+    background-color: var(--yellow);
+}
+
+/* ----------------- Media queries ------------/* 
+
+/* Less than or equal to 700px */
+@media (width <= 1000px) {
+    .clear {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: white !important;
+    }
+
+    .nav-link, .nav-link:active {
+        color: #023047 !important;
+    }
+
+    .navbar-scrolled .nav-link {
+        color: #023047 !important;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        padding: 0 !important;
+    }
+
+    #bannertext {
+        text-align: center;
+        font-size: 10vh;
+        padding-top: 100px;
+    }
+
+    #image-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ramenhead {
+        max-height: 50vh;
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .side-img {
+        display: none;
+    }
+}
+
+/* less than 700px */
+@media (width <= 700px) {
+    #row-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-row {
+        display: block;
+    }
+
+    #form {
+        margin: 10px 1px 1px 1px !important;
+        padding: 10px 1px 1px 1px !important;
+    }
+}
